@@ -3,3 +3,23 @@ a:hover{
 color: green;
 
 }
+body{
+flex-direction: column;
+
+	display: flex
+}
+main{
+	display: flex;
+	flex: auto
+
+}
+
+aside{
+	flex: 1
+
+}
+
+article{
+	flex: 3
+
+}
