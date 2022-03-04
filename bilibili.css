@@ -30,6 +30,7 @@ aside{
 article{
   flex: 1;
   background: #b1c2bd;
+  text-align: center;
 }
 
 right{
