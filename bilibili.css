@@ -3,7 +3,7 @@ body{
     background-size:110% 100% ;
     display: flex;
     width: 99%;
-    height: 720px;
+    height: 100%;
     border: 1px solid red;
     flex-direction: column;
 }
