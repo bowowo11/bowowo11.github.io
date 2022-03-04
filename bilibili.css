@@ -4,14 +4,13 @@ body{
     display: flex;
     width: 99%;
     height: 100%;
-    border: 1px solid red;
     flex-direction: column;
 }
 
 header{
   height: 100px;
   width: 100%;
-  background: #3be662;
+  text-align: center;
 }
 
 main{
@@ -23,13 +22,12 @@ main{
 }
 
 aside{
-  width: 200px;
-  background: #d7b052;
+  width: 400px;
+
 }
 
 article{
   flex: 1;
-  background: #b1c2bd;
   text-align: center;
 }
 
