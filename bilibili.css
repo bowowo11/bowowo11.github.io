@@ -1,0 +1,61 @@
+body{
+    background: url(背景bilibili.jpg) center no-repeat;
+    background-size:110% 100% ;
+    display: flex;
+    width: 99%;
+    height: 720px;
+    border: 1px solid red;
+    flex-direction: column;
+}
+
+header{
+  height: 100px;
+  width: 100%;
+  background: #3be662;
+}
+
+main{
+  flex: 1;
+  width: 100%;
+  background: red;
+  display: flex;
+  flex-direction: row;
+}
+
+aside{
+  width: 200px;
+  background: #d7b052;
+}
+
+article{
+  flex: 1;
+  background: #b1c2bd;
+}
+
+right{
+  width: 200px;
+  background: #d7b052;
+}
+
+
+footer{
+    width: 100%;
+    text-align: center;    
+    color: rgba(250, 250, 250, 1.0);
+    font-size: 150%;
+
+}
+
+footer a{
+    color: rgba(250, 250, 250, 0.6);
+    font-weight: 800;
+    font-size: 100%;
+
+
+
+}
+
+a{
+    text-decoration: none;}
+
+

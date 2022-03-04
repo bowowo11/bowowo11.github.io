@@ -1,30 +1,143 @@
-a:hover{
-
-color: green;
-
-}
 body{
-flex-direction: column;
-
-	display: flex
+        background: url(qQLm0veeXW.jpg) center no-repeat;
+        background-size:100% 100% ;
+        display: flex;
+        flex-direction: column;
 }
+
 main{
-	display: flex;
-	flex: auto
+        display: flex;
+        flex-direction: row;
 
 }
 
 aside{
-	flex: 1
+;
+       height: 550px;
+        margin:11px 0px 0px 25px ;
 
+}
+header{
+  height: 60px;
+  width: 100%;
+;
 }
 
 article{
-	flex: 3
+         flex: 1;
+        height: 600px;
+}
+
+footer{
+        font-size: 145%;
+        font-weight:bold;
+        color:rgba(105,105,105,0.8);
+    clear: both;
+    display: block;
+    text-align: center;    
+    margin: 0px auto;;
 
 }
 
-.small{
-	width: 100px;
-	height: 100px;
+a{
+        text-decoration: none;}
+
+.cssmenu > ul{
+
+        list-style-type:none;
+        margin:0px 0px 0px 0px;
+        float:left;
+
+
+}
+
+.cssmenu > ul >li :hover {
+        font-weight:800;
+        background-color:rgba(0,0,0,0.05);
+}
+
+
+.cssmenu > ul >li{
+        float:left;
+        margin: 0px 50px 0px 0px;
+}
+
+.cssmenu >ul >li >a{
+        font-weight:500;
+        font-size:250%;
+        color: #000;
+        text-decoration:none;
+
+}
+
+img{
+        border-style:inset ;
+        border-color:rgba(250,250,250,0.1) ;
+
+}
+
+
+
+
+input,textarea{
+        border: 1px solid #ccc;
+        padding: 7px 0px;
+        border-radius: 3px;
+        padding-left:5px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+
+
+
+.content {
+        position: absolute;
+        background: #111;
+}
+
+.wrap {
+
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: -15px;
+        bottom:0px;
+        display: table-cell;
+        vertical-align: middle;
+        overflow: hidden;
+}
+.wrap h1.title {
+        display: table;
+        font-size: 110%;
+        height: 100%;
+        text-transform: uppercase;
+        width: 100%;
+   
+}
+.hoverimage {
+        display: table-cell;
+        position: relative;
+        vertical-align: middle;
+        color: #fff;
+        text-decoration: none;
+        opacity: 0;
+}
+.hoverimage:hover {
+        opacity: 0.9;
+        color: #fff;
+        background: rgba(0,0,0,0.8);
+}
+
+#footerfront{
+        
 }

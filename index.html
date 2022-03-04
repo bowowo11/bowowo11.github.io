@@ -3,39 +3,83 @@
 <html lang="zh-CN">
 
 <head>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
     <title>我的个人网站</title>
-<script src="thumbnail.js"></script>
-<link
-href="style.css"
-rel="stylesheet"
-/>
+    <script src="thumbnail.js"></script>
+    <link
+    href="style.css"
+    rel="stylesheet"
+    />
 </head>
 
-<body>
-<header><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.hoyoh.com%2Fuploads%2Fallimg%2F210531%2F1300514452-3.jpg&refer=http%3A%2F%2Fwww.hoyoh.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648737826&t=8d9d42475253a7559b2a6f6814fc46e0" id="smart-image" class="small"></header>
+<body background="./qQLm0veeXW.jpg" >
 
-<main>
-<aside><ul><a href="https://www.beijing2022.cn/">冬奥会官网</a> <a href="https://tiyu.baidu.com/beijing2022/home/tab/奖牌榜/from/pc">奖牌榜</a></ul></aside>
-<article>
-<h1>BEIJING 2022</h1>
-<p>第24届冬季奥林匹克运动会（XXIV Olympic Winter Games），即2022年北京冬季奥运会，是由中国举办的国际性奥林匹克赛事，于2022年2月4日开幕，2月20日闭幕。</p>
-<h2>一起向未来</h2>
-<p>“一起向未来”，中国向世界发出的诚挚邀约，传递出14亿中国人民的美好期待：在奥林匹克精神的感召下，与世界人民携手共进、守望相助、共创美好未来。</p>
-<h3>Together For A Shared Future</h3>
-<p>“一起向未来”的英文“Together for a Shared Future”由5个英文单词组成，“一起（Together）”展现了人类在面对困境时的坚强姿态，指明了战胜困难、开创未来的成功之道。“向未来（for a Shared Future）”表达了人类对美好明天的憧憬，传递了信心和希望；“一起向未来（Together for a Shared Future）”是态度、是倡议、更是行动方案，倡导追求团结、和平、进步、包容的共同目标。 口号的三个关键词together，shared和future体现了团结一致、共同努力的理念，在疫情持续蔓延给人类生产生活带来巨大不确定性的当下，具有价值引领的重大意义。</p>
-<a href="https://bowowo11.github.io/bilibili.html"><img src="https://img1.baidu.com/it/u=2175350495,1780360516&fm=253&fmt=auto&app=138&f=JPEG?w=240&h=240"></a>
-<h1>Hello Adalab</h1>
-<p>This is the first page I made at Adalab.</p>
 
-</article>
+    <header class="cssmenu">
+        <ul>
+            <li><a href ="index.html">首页</a></li>
+            <li><a  href ="about.html" >视频</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <aside>
+            <br> <br><br> 
+            <div class="div1" id="div1">
+                <!-- 创建昵称和留言文本框 -->
+                <span > 昵称：</span><input type="text" id="user" name="user" style="background-color:rgba(241,241,241,.98)" >
+                <br> <br>
+                <div><span style="float:left ">留言：</span></div>
+                <div><textarea id="lang"  rows="3" style="border:1;border-radius:5px;background-color:rgba(241,241,241,.98);width: 160px;height: 100px;padding: 0px;resize: none;" placeholder="输入想说的话吧"></textarea></div>
+                <!-- 创建提交评价按钮 -->
+
+                <input type="button" value="提交评论 " id="btn" style="margin: 20px 0px 20px 85px;">
+            </div>
+        </aside>
+
+        <article>
+            <div>
+             <div style=" margin: 60px 0px 0px 20px; float:left" >
+                 <a href="bilibili.html" ><img src="./图1.jpeg" height="540" width="280" border="8px" class="imges" id="imge1"/></a>
+             </div>
+
+             <div style=" margin: 60px 0px 0px 20px; float:left">
+              <a href="bilibili.html" ><img src="./图2.jpeg" height="540" width="850" border="8px" class="imges" id="imge2"/></a>
+             </div>
+            </div>
+
+
+
+
+  </article>
+
 </main>
 
-<footer>by <a href="https://www.zhihu.com/people/0-0-26-24" target="_blank">bowowo11</a> for <a href="https://www.adalab.cn" target="_blank">Adalab</a></footer>
-
+<footer></footer>
 
 
 </body>
 
-
+<script type="text/javascript">
+    //通过id属性查找标签节点
+    var user=document.getElementById('user');
+    var lang=document.getElementById('lang');
+    //通过id属性查找提交评价按钮并绑定点击事件
+    document.getElementById('btn').onclick=function(){
+        //在html代码中创建一个div盒子
+        var cont=document.createElement('div');
+        //将获取到的数据，放到一创建好的盒子中
+        cont.innerHTML='<p>'+user.value+':'+lang.value+'</p><hr>';
+        //将创建好的div盒子及及内容显示在页面中
+        document.getElementById('div1').appendChild(cont);
+        user.value='';
+        lang.value='';
+    }
+</script>
 </html>
+
