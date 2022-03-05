@@ -27,16 +27,25 @@
     <main>
 
         <aside>
-            <div class="div1" id="div1" >
-                <!-- 创建昵称和留言文本框 -->
-                <span > 昵称：</span><input type="text" id="user" name="user" style="background-color:rgba(241,241,241,.98)" >
-                <br> <br>
-                <div><span style="float:left ">留言：</span></div>
-                <div><textarea id="lang"  rows="3" style="border:1;border-radius:5px;background-color:rgba(241,241,241,.98);width: 160px;height: 100px;padding: 0px;resize: none;" placeholder="输入想说的话吧"></textarea></div>
-                <!-- 创建提交评价按钮 -->
-
-                <input type="button" value="提交评论 " id="btn" style="margin: 20px 0px 20px 85px;">
-            </div>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-bowowo11-github-io-index-html-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </aside>
 
 
@@ -61,25 +70,7 @@
 </main>
 
 <footer>
-    <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://574402481.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
         By <a href="https://www.zhihu.com/people/wu-liang-fan-ben-ben" target="_blank" style="color:rgba(96,96,96,1) ">Batman1</a> For &nbsp; <a href="https://www.adalab.cn" target="_blank">
 
          <div style="float: right;"><img src="https://www.adalab.cn/images/adalab.png" width="150" height="30" ;></div></a>
@@ -90,20 +81,5 @@
 
 </body>
 
-<script type="text/javascript">
-    //通过id属性查找标签节点
-    var user=document.getElementById('user');
-    var lang=document.getElementById('lang');
-    //通过id属性查找提交评价按钮并绑定点击事件
-    document.getElementById('btn').onclick=function(){
-        //在html代码中创建一个div盒子
-        var cont=document.createElement('div');
-        //将获取到的数据，放到一创建好的盒子中
-        cont.innerHTML='<p>'+user.value+':'+lang.value+'</p><hr>';
-        //将创建好的div盒子及及内容显示在页面中
-        document.getElementById('div1').appendChild(cont);
-        user.value='';
-        lang.value='';
-    }
-</script>
+
 </html>
