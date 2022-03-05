@@ -31,6 +31,22 @@ article{
   text-align: center;
   height: 500px;
 }
+#bilibilivideo{
+    position: absolute;
+    bottom: 65px;
+    right: 225px;
+
+}
+#poppic{
+    position: absolute;
+    z-index: 10002;
+    opacity: 0;
+    left: 660px;
+    top: 200px;
+
+}
+
+
 
 right{
   width: 200px;

@@ -1,0 +1,8 @@
+#poppic{
+	position:absolute;
+	z-index: 1000001;
+	opacity: 0;
+	text-align: center;
+}
+
+

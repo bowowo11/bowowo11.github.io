@@ -1,16 +1,3 @@
-<!DOCTYPE html >
-
-<head><meta content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="test.css">
-
-<title>弹出小窗口示例</title>
-</head>
-
-<body>
-<a href="javascript:void(0);" onclick="show();return false;">点击弹出小窗口 </a>
-<img src="向晚.png" id ="poppic">
-<script type="text/javascript">
-
 var isshow=0;//0小窗口没有显示，1小窗口已显
 function creatediv()
 {			
@@ -49,7 +36,7 @@ function creatediv()
     msgObj.style.width = msgw + "px";
     msgObj.style.height =msgh + "px";
     msgObj.style.zIndex = "10001";
-    msgObj.innerHTML = "点击图片可以进入个人主页，点个关注再走吧！orz<br /><a href=\"javascript:void(0);\" onclick='popshow()'>已关注</a><a href=\"javascript:void(0);\" onclick='delWinD();return false;'>这就去</a><a href=\"index.html\">狠心拒绝</a>";
+    msgObj.innerHTML = "<p>点击图片可以进入个人主页，点个关注再走吧！orz</p><br/><a href=\"javascript:void(0);\" onclick='popshow()'>已关注</a><a href=\"javascript:void(0);\" style=\"margin: 0px 0px 0px 20px;\"onclick='delWinD();return false;'>这就去</a><a href=\"index.html\"style=\"margin: 0px 0px 0px 20px;\">狠心拒绝</a><br><br><br><img src=\"爱心.jpg\">";
     document.body.appendChild(msgObj); 
 }
 
@@ -72,13 +59,8 @@ function show()
     }  
 }
 function popshow(){
-	document.getElementById("poppic").style.opacity="1";
-setTimeout("window.location.href=\"index.html\"",3000);
-	;
+	document.getElementById("poppic").style.opacity="1"
+	document.getElementById("bilibilivideo").style.zIndex="-1"
+	setTimeout("window.location.href=\"index.html\"",2000);
+	
 }
-
-</script>
-
-
-
-</body></html>

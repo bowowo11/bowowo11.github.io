@@ -13,15 +13,14 @@ main{
 
 aside{
         width: 300px;
-;
-       height: 550px;
+        height: 550px;
         margin:11px 0px 0px 25px ;
 
 }
 header{
-  height: 60px;
-  width: 100%;
-;
+      height: 60px;
+      width: 100%;
+      ;
 }
 
 article{
@@ -33,10 +32,10 @@ footer{
         font-size: 145%;
         font-weight:bold;
         color:rgba(105,105,105,0.8);
-    clear: both;
-    display: block;
-    text-align: center;    
-    margin: 0px auto;;
+        clear: both;
+        display: block;
+        text-align: center;    
+        margin: 0px auto;;
 
 }
 
@@ -45,57 +44,54 @@ a{
 
 .cssmenu > ul{
 
-        list-style-type:none;
-        margin:0px 0px 0px 0px;
-        float:left;
-
-
+                list-style-type:none;
+                margin:0px 0px 0px 0px;
+                float:left;
 }
 
 .cssmenu > ul >li :hover {
-        font-weight:800;
-        background-color:rgba(0,0,0,0.05);
-}
+                font-weight:800;
+                background-color:rgba(0,0,0,0.05);
+        }
 
 
 .cssmenu > ul >li{
-        float:left;
-        margin: 0px 50px 0px 0px;
-}
+                float:left;
+                margin: 0px 50px 0px 0px;
+        }
 
 .cssmenu >ul >li >a{
-        font-weight:500;
-        font-size:250%;
-        color: #000;
-        text-decoration:none;
+                font-weight:500;
+                font-size:250%;
+                color: #000;
+                text-decoration:none;
 
-}
+        }
 
 img{
-        border-style:inset ;
-        border-color:rgba(250,250,250,0.1) ;
-
+                border-style:inset ;
+                border-color:rgba(250,250,250,0.1) ;
 }
 
 
 
 
 input,textarea{
-        border: 1px solid #ccc;
-        padding: 7px 0px;
-        border-radius: 3px;
-        padding-left:5px;
-        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+                border: 1px solid #ccc;
+                padding: 7px 0px;
+                border-radius: 3px;
+                padding-left:5px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
 }
 input:focus{
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+            border-color: #66afe9;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
 }
 
 
@@ -123,7 +119,7 @@ input:focus{
         height: 100%;
         text-transform: uppercase;
         width: 100%;
-   
+
 }
 .hoverimage {
         display: table-cell;
@@ -139,6 +135,3 @@ input:focus{
         background: rgba(0,0,0,0.8);
 }
 
-#footerfront{
-        
-}
