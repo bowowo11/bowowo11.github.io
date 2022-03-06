@@ -119,6 +119,8 @@ input:focus{
         height: 100%;
         text-transform: uppercase;
         width: 100%;
+        color: white; 
+        text-shadow: 0px 0px 15px #00FFFF,0px 0px 15px #00FFFF,0px 0px 15px #00FFFF; 
 
 }
 .hoverimage {
