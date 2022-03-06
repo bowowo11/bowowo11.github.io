@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>page1</title>
+    <link rel="icon" href="picture/favicon.ico" type="image/x-icon">
+    <script src=""></script>
+    <link
+    href="page1.css"
+    rel="stylesheet"
+    />
+</head>
+
+<body>
+
+    <header>
+        <p>抽签小游戏</p>
+        <button onclick="restart()" >开始</button>
+        <button onclick="stop()" >停止</button>
+    </header>
+    <main>
+        <div id="window">
+            <ul id="roll">
+               <li><img src="picture/凶.jpg" /></li> 
+               <li><img src="picture/大吉.jpg"/></li>
+               <li><img src="picture/中吉.jpg"/></li>
+               <li><img src="picture/吉.jpg"/></li>
+               <li><img src="picture/小吉.jpg"/></li>
+           </ul>
+       </div>
+
+
+   </main>
+   <footer>
+    <br><div style="margin:0px 0px 0px 200px">By <a href="https://www.zhihu.com/people/wu-liang-fan-ben-ben" target="_blank" style="color:rgba(0,168,232,1) ">Batman1</a> For &nbsp; <a href="https://www.adalab.cn" target="_blank" style="margin:0px 0px 0px 0px"> <img src="https://www.adalab.cn/images/adalab.png" width="150" height="30" ;></a>
+    <a href="index.html" style="margin: 5px 35px 0px 0px; float: right;">返回主页</a></footer>
+</body>
+</html>
+
+<script type="text/javascript">
+    var content=document.getElementById("window");
+    var items=content.getElementsByTagName("ul");
+    var itemss=items[0].getElementsByTagName("li")
+    var button1=document.getElementById('start')
+    function stop(){
+        document.getElementById('roll').style.animationPlayState = 'paused'
+
+    }
+
+    function restart(){
+        document.getElementById('roll').style.animationPlayState = 'running'
+        document.getElementById('roll').style.animation = 'change 0.5s linear 0s infinite alternate-reverse'
+    }
+
+    function get(){
+
+        for(var i=0;i<itemss.length;i++){
+            if(itemss[i].offsetLeft  > -125 && itemss[i].offsetLeft < 125){
+                itemss[i].style.opacity=1
+            }
+            else{
+                itemss[i].style.opacity=0.2
+            }
+        }  
+        permanent=setInterval(get,100) 
+    }
+    get()
+
+
+</script>

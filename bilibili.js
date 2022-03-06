@@ -36,7 +36,7 @@ function creatediv()
     msgObj.style.width = msgw + "px";
     msgObj.style.height =msgh + "px";
     msgObj.style.zIndex = "10001";
-    msgObj.innerHTML = "<p>点击图片可以进入个人主页，点个关注再走吧！orz</p><br/><a href=\"javascript:void(0);\" onclick='popshow()'>已关注</a><a href=\"javascript:void(0);\" style=\"margin: 0px 0px 0px 20px;\"onclick='delWinD();return false;'>这就去</a><a href=\"index.html\"style=\"margin: 0px 0px 0px 20px;\">狠心拒绝</a><br><br><br><img src=\"爱心.jpg\">";
+    msgObj.innerHTML = "<p>点击图片可以进入个人主页，点个关注再走吧！orz</p><br/><a href=\"javascript:void(0);\" onclick='popshow()'>已关注</a><a href=\"javascript:void(0);\" style=\"margin: 0px 0px 0px 20px;\"onclick='delWinD();return false;'>这就去</a><a href=\"index.html\"style=\"margin: 0px 0px 0px 20px;\">狠心拒绝</a><br><br><br><img src=\"picture/爱心.jpg\">";
     document.body.appendChild(msgObj); 
 }
 
