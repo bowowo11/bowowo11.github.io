@@ -123,6 +123,7 @@ input:focus{
 
 }
 .hoverimage {
+        transition-duration: 1s;
         display: table-cell;
         position: relative;
         vertical-align: middle;
@@ -136,6 +137,20 @@ input:focus{
         background: rgba(0,0,0,0.8);
 }
 
+#arrow{
+        position: relative;
+        width:50px;
+        height: 200px;
+        transition: 1.5s;
+}
+
 #arrow:hover{
 background: rgba(0,0,0,0.3);
+ height: 50px;
+ margin: 75px 0px 0px 0px;
+}
+
+#mover{
+        height: 100%;
+        width: 1 px;
 }
