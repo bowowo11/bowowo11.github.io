@@ -143,6 +143,7 @@ input:focus{
         width:50px;
         height: 200px;
         transition: 1.5s;
+        top: 0px;
 }
 
 #link:hover #arrow{
@@ -154,19 +155,21 @@ input:focus{
 
 
 #link{
-        position:absolute; 
+        position:fixed;
         left: 1480px;
         top: 220px;
         background: rgba(255, 255, 255, 0.8);
         width:1px;
-        height: 200px;
+        height: 193px;
         transition: 1.5s;
+        padding: 10px 0 0;
+        z-index: 1;
 
 }
 
 
 #link:hover{
-        width: 55px;
-        height: 54px;
-        margin: 75px 0px 0px 0px;
+        width: 50px;
+        height: 44px;
+        top: 300px;
 }
