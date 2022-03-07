@@ -1,9 +1,9 @@
-var isshow=0;//0小窗口没有显示，1小窗口已显
+var isshow=0;
 function creatediv()
 {			
 	var msgw,msgh,bordercolor;
-	msgw=400;//提示窗口的宽度
-	msgh=505;//提示窗口的高度
+	msgw=400;
+	msgh=505;
 	var sWidth,sHeight;
 	if( top.location == self.location )
 		doc = document;
@@ -49,7 +49,7 @@ function delWinD()
 function show()
 {   
     isshow=1;
-    if(!document.getElementById("msgDiv"))//小窗口不存在
+    if(!document.getElementById("msgDiv"))
         creatediv();
     else
     {

@@ -1,8 +1,9 @@
 body{
-        background: url(picture/qQLm0veeXW.jpg) center no-repeat;
+        width: 200%;
+        background: url(picture/qQLm0veeXW.jpg) center ;
         background-size:100% 100% ;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
 }
 
 main{
@@ -24,18 +25,18 @@ header{
 }
 
 article{
-        width: 100%;
+        flex: 1;
         height: 600px;
 }
 
 footer{
+        width: 50%;
         font-size: 145%;
         font-weight:bold;
         color:rgba(105,105,105,0.8);
         clear: both;
         display: block;
         text-align: center;    
-        margin: 0px auto;;
 
 }
 
@@ -95,8 +96,6 @@ input:focus{
 }
 
 
-
-
 .content {
         position: absolute;
         background: #111;
@@ -137,3 +136,6 @@ input:focus{
         background: rgba(0,0,0,0.8);
 }
 
+#arrow:hover{
+background: rgba(0,0,0,0.3);
+}
