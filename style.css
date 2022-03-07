@@ -138,19 +138,35 @@ input:focus{
 }
 
 #arrow{
-        position: relative;
+        z-index:2;
+        position: absolute;
         width:50px;
         height: 200px;
         transition: 1.5s;
 }
 
-#arrow:hover{
-background: rgba(0,0,0,0.3);
+#link:hover #arrow{
+ background: rgba(0,0,0,0.3);
  height: 50px;
- margin: 75px 0px 0px 0px;
 }
 
-#mover{
-        height: 100%;
-        width: 1 px;
+
+
+
+#link{
+        position:absolute; 
+        left: 1480px;
+        top: 220px;
+        background: rgba(255, 255, 255, 0.8);
+        width:1px;
+        height: 200px;
+        transition: 1.5s;
+
+}
+
+
+#link:hover{
+        width: 55px;
+        height: 54px;
+        margin: 75px 0px 0px 0px;
 }
