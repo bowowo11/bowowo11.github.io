@@ -19,9 +19,9 @@ aside{
 
 }
 header{
-      height: 60px;
-      width: 100%;
-      ;
+  height: 60px;
+  width: 100%;
+  ;
 }
 
 article{
@@ -43,25 +43,25 @@ footer{
 a{
         text-decoration: none;}
 
-.cssmenu > ul{
+        .cssmenu > ul{
 
                 list-style-type:none;
                 margin:0px 0px 0px 0px;
                 float:left;
-}
+        }
 
-.cssmenu > ul >li :hover {
+        .cssmenu > ul >li :hover {
                 font-weight:800;
                 background-color:rgba(0,0,0,0.05);
         }
 
 
-.cssmenu > ul >li{
+        .cssmenu > ul >li{
                 float:left;
                 margin: 0px 50px 0px 0px;
         }
 
-.cssmenu >ul >li >a{
+        .cssmenu >ul >li >a{
                 font-weight:500;
                 font-size:250%;
                 color: #000;
@@ -69,15 +69,15 @@ a{
 
         }
 
-img{
+        img{
                 border-style:inset ;
                 border-color:rgba(250,250,250,0.1) ;
-}
+        }
 
 
 
 
-input,textarea{
+        input,textarea{
                 border: 1px solid #ccc;
                 padding: 7px 0px;
                 border-radius: 3px;
@@ -87,16 +87,16 @@ input,textarea{
                 -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
                 -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
                 transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
-}
-input:focus{
+        }
+        input:focus{
             border-color: #66afe9;
             outline: 0;
             -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
             box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
-}
+    }
 
 
-.content {
+    .content {
         position: absolute;
         background: #111;
 }
@@ -147,7 +147,7 @@ input:focus{
 }
 
 #link:hover #arrow{
- height: 50px;
+       height: 50px;
 }
 
 
