@@ -3,27 +3,166 @@
 <html lang="zh-CN">
 
 <head>
+    <link rel="icon" href="picture/favicon.ico" type="image/x-icon">
     <meta charset="utf-8">
     <title>我的个人网站</title>
-<link href="style.css" rel="stylesheet">
-<script src="thumbnail.js"></script>
+    <script src="thumbnail.js"></script>
+    <link
+    href="style.css"
+    rel="stylesheet"
+    />
 </head>
 
 <body>
-<header><img src="https://www.adalab.cn/images/adalab.png" id="smart-image" class="small"><h1>Hello Adalab</h1>
-<h2>123</h2>
-<h3>123</h3>
-<h4>123</h4>
-</header>
-<main>
-    <aside>
-    <ul><a href="https://www.bilibili.com/v/popular/rank/game?spm_id_from=333.851.b_62696c695f7265706f72745f67616d65.39">111</a></ul>
-    </aside>
-    <article>
-<p>This is the first page I made at Adalab.</p>
-</article>
-</main>
-<footer>by <a href="https://www.zhihu.com/people/wu-liang-fan-ben-ben" target="_blank">CGTN</a> for <a href="https://www.adalab.cn" target="_blank">Adalab</a></footer>
+
+    <header class="cssmenu">
+        <ul>
+            <li><a href ="index.html" >首页</a></li>
+            <li><a  href ="bilibili.html" >视频</a></li>
+        </ul>
+        <audio src="孤勇者.mp3" id="audio1" controls="controls" style="margin: 0px 0px 0px 30px;"></audio>
+        <p>TAROT</p>
+        <div style="display: inline-block;float: right;" id="rightplace"></div>
+
+    </header>
+
+    <main>
+
+        <aside>
+            <div id="disqus_thread"></div>
+            <script>
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://https-bowowo11-github-io-index-html-1.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+        </aside>
+
+
+
+        <article >
+            <div class="content" style="left: 340px;top: 80px;">
+                <div> <img width="280" height="540" src="picture/图1.jpeg"> </div>
+                <div class="wrap">
+                    <h1 class="title"><a href="page1.html" class="hoverimage" style="font-size:200%">item1</a></h1>
+                </div>
+            </div>
+            <div class="content" style="left: 640px;top: 80px;float: left;">
+                <div> <img width="850" height="540" src="picture/图2.jpeg"> </div>
+                <div class="wrap">
+                    <h1 class="title"><a href="https://staratlas.com/" class="hoverimage" style="font-size:200%" >Star Atlas<br>
+                        <p style="font-size: 50%;"><font color="#FF2800">I</font><font color="#FF5000">n</font><font color="#FF7800">t</font><font color="#FFA000">e</font><font color="#FFC800">r</font><font color="#FFF000">a</font><font color="#D7FF00">c</font><font color="#AFFF00">t</font><font color="#87FF00">i</font><font color="#5FFF00">v</font><font color="#37FF00">e</font> <font color="#0FFF00">s</font><font color="#00FF28">t</font><font color="#00FF50">a</font><font color="#00FF78">r</font> <font color="#00FFA0">m</font><font color="#00FFC8">a</font><font color="#00FFF0">p</font> <font color="#00D7FF">o</font><font color="#00AFFF">f</font> <font color="#0087FF">t</font><font color="#005FFF">h</font><font color="#0037FF">e</font> <font color="#000FFF">n</font><font color="#2800FF">i</font><font color="#5000FF">g</font><font color="#7800FF">h</font><font color="#A000FF">t</font> <font color="#C800FF">s</font><font color="#F000FF">k</font><font color="#FF00D7">y</font></p></a></h1>
+                    </div>
+                </div>
+
+
+                <div id ="link" >
+
+                    <a href="javascript:void(0);" onclick="movetoright()"  ><img src="picture/箭头.png" id="arrow" ></a>
+
+
+                </div>
+                <div id="window">
+                 <ul id="roll">
+                    <img src="picture/chariot.jpg" /> 
+                    <img src="picture/emperor.jpg"/>
+                    <img src="picture/empress.jpg"/>
+                    <img src="picture/fool.jpg"/>
+                    <img src="picture/lovers.jpg" /> 
+                    <img src="picture/magician.jpg"/>
+                    <img src="picture/priestess.jpg"/>
+                    <img src="picture/chariot.jpg" /> 
+                    <img src="picture/emperor.jpg"/>
+                </ul>
+            </div>
+                <div id="showlist">
+                <ul>
+                 <img/> 
+                 <img/> 
+                 <img/>
+             </ul>
+                 </div>
+         <div id="buttonlist">
+         <button onclick="restart()" >Start</button>
+         <button onclick="stop()" >Stop</button>
+         <button onclick="back()">Back</button>
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            var permanent=setInterval(get,1000) 
+            var content=document.getElementById("window");
+            var items=content.getElementsByTagName("ul");
+            var itemss=items[0].getElementsByTagName("img")
+            var asidecontent=document.getElementById("showlist");
+            var asideitems=asidecontent.getElementsByTagName("ul");
+            var asideitemss=asideitems[0].getElementsByTagName("img")
+            var count = 0 
+            function stop(){
+                clearInterval(permanent)
+                document.getElementById('roll').style.animationPlayState = 'paused'
+                for(var i=0;i<itemss.length;i++){
+                    if(itemss[i].offsetLeft  >= 75 && itemss[i].offsetLeft <= 324){
+
+                        asideitemss[count].src=itemss[i].src
+                        count = count +1
+                        if (count > 2) {
+                           alert('已经抽满了')
+                       }
+
+                   }}}
+
+                   function restart(){
+                    permanent=setInterval(get,10)
+                    document.getElementById('roll').style.animationPlayState = 'running'
+                    document.getElementById('roll').style.animation = 'change 0.5s linear 0s infinite normal'
+                }
+
+                function get(){
+
+                    for(var i=0;i<itemss.length;i++){
+                        if(itemss[i].offsetLeft  >= 75 && itemss[i].offsetLeft <= 324){
+                            itemss[i].style.opacity=1
+                        }
+                        else{
+                            itemss[i].style.opacity=0.2
+                        }
+                    }  
+                    
+                }
+               
+                function movetoright(){ 
+                    document.getElementById("rightplace").scrollIntoView(true);
+                }
+                function back(){
+                    document.getElementById("leftplace").scrollIntoView(true);
+                }
+          
+                get()
+            </script>
+
+        </article>
+
+    </main>
+
+    <footer>
+       <div style="display: inline-block;float: left;" id="leftplace"></div>
+
+       <div style="display: inline-block;">By <a href="https://www.zhihu.com/people/0-0-26-24" target="_blank" style="color:rgba(96,96,96,1);">Batman1</a> For &nbsp; <a href="https://www.adalab.cn" target="_blank"></div>
+
+        <div style="display: inline-block;"><img src="https://www.adalab.cn/images/adalab.png" width="150" height="30";></div></a>
+
+
+    </footer>
+
+
 </body>
+
 
 </html>

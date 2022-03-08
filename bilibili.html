@@ -4,30 +4,86 @@
 
 <head>
     <meta charset="utf-8">
-    <title>我的个人网站</title>
+    <title>哔哩哔哩视频</title>
+    <link rel="icon" href="picture/bilibili.ico" type="image/x-icon">
+    <script src="bilibili.js"></script>
+    <link
+    href="bilibili.css"
+    rel="stylesheet"
+    />
 </head>
 
-<body>
-<header><img src="https://www.adalab.cn/images/adalab.png">
-<h1>Hello Adalab</h1>
-<h2>123</h2>
-<h3>123</h3>
-<h4>123</h4>
-</header>
-<main>
-	<aside>
-	<ul><a href="https://www.bilibili.com/v/popular/rank/game?spm_id_from=333.851.b_62696c695f7265706f72745f67616d65.39">111</a></ul>
-	</aside>
-	<article>
-	<iframe src="https://player.bilibili.com/player.html?aid=755714231&bvid=BV1cr4y1F7kh&cid=266841003&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-<p>This is the first page I made at Adalab.</p></article>
-</main>
-<footer><a href="https://www.zhihu.com/people/wu-liang-fan-ben-ben" target="_blank">CGTN</a> for <a href="https://www.adalab.cn" target="_blank">Adalab</a>
-<a href="index.html" style="position: absolute; top: 500px;">返回</a></footer>
+<body >
+    <header>
+        <a href="https://space.bilibili.com/703007996?from=search&seid=6952802229789320857&spm_id_from=333.337.0.0"><img src="picture/图标.png"></a>
+    </header>
+
+    <main>
+        <aside>
+            <a href="https://space.bilibili.com/672328094?from=search&seid=17585659951151527890&spm_id_from=333.337.0.0" id="Awebsite"><img src="picture/嘉然.png" id="picture" style="width:360px ;height: 560px;margin: 0;"></a>
+
+        </aside>
+        <article>
+            <img src="picture/点赞.gif" id ="poppic">
+            <iframe src="https://player.bilibili.com/player.html?aid=714893724&bvid=BV1FX4y1g7u8&cid=318542946&page=1" scrolling="no" border="1" frameborder="no" framespacing="0" allowfullscreen="true" width="900" height="500" high_quality=1 id ="bilibilivideo"> </iframe>
+        </article>
+        <right>
+            <br>
+            <br>
+            <br>
+            <button type="button"  onclick="dianna()" >猫中毒</button>
+            <br>
+            <button type="button" onclick="eileen()" >迷迭香 </button>
+            <br>
+            <button type="button" onclick="carol()">红色高跟鞋</button>
+            <br>
+            <button type="button" onclick="ava()">水母之歌</button>
+            <br>
+            <button type="button" onclick="bella()">小拉乱撞</button>
+            <script type="text/javascript">
+                var video = document.querySelector("#bilibilivideo");
+                var pic = document.querySelector("#picture");
+                var aweb = document.querySelector("#Awebsite")
+                function dianna() {
+                    video.src = "https://player.bilibili.com/player.html?aid=714893724&bvid=BV1FX4y1g7u8&cid=318542946&page=1"
+                    pic.src="picture/嘉然.png"
+                    aweb.href="https://space.bilibili.com/672328094?from=search&seid=17585659951151527890&spm_id_from=333.337.0.0"
+                }
+
+                function eileen() {
+                    video.src = "https://player.bilibili.com/player.html?aid=845396404&bvid=BV1f54y1j7X8&cid=341913923&page=1" 
+                    pic.src="picture/乃琳.png"
+                    aweb.href="https://space.bilibili.com/672342685?from=search&seid=4393152106352498976&spm_id_from=333.337.0.0"
+                }
+
+                function carol() {
+                    video.src = "https://player.bilibili.com/player.html?aid=502193304&bvid=BV1PN411X7QW&cid=311661670&page=1"
+                    pic.src="picture/珈乐.png"
+                    aweb.href="https://space.bilibili.com/351609538?from=search&seid=1248675834092536748&spm_id_from=333.337.0.0"
+                }
+
+                function ava() {
+                    video.src = "https://player.bilibili.com/player.html?aid=673687696&bvid=BV1DU4y15767&cid=354558365&page=1"
+                    pic.src="picture/向晚.png"
+                    aweb.href="https://space.bilibili.com/672346917?from=search&seid=8292987344502646718&spm_id_from=333.337.0.0"
+                }
+
+                function bella() {
+                    video.src = "https://player.bilibili.com/player.html?aid=851975249&bvid=BV1SL4y1M7Ns&cid=518876519&page=1"
+                    pic.src="picture/贝拉.png"
+                    aweb.href="https://space.bilibili.com/672353429?from=search&seid=1248675834092536748&spm_id_from=333.337.0.0"
+                }
+
+            </script>
+
+        </right>
+    </main>
+    <footer>
+
+        <div style="margin:0px 0px 0px 200px">By <a href="https://www.zhihu.com/people/0-0-26-24" target="_blank" style="color:rgba(0,168,232,1) ">Batman1</a> For &nbsp; <a href="https://www.adalab.cn" target="_blank" style="margin:0px 0px 0px 0px"> <img src="https://www.adalab.cn/images/adalab.png" width="150" height="30" ;></a>
+            <a href="javascript:void(0);" onclick="show();return false;" style="margin: 5px 35px 0px 0px; float: right;">返回主页</a>
+        </div>
+    </footer>
+
 </body>
-
 </html>
-
-
-
-
