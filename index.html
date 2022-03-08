@@ -20,7 +20,10 @@
             <li><a href ="index.html" >首页</a></li>
             <li><a  href ="bilibili.html" >视频</a></li>
         </ul>
-        <audio src="孤勇者.mp3" id="audio1" controls="controls"></audio>
+        <audio src="孤勇者.mp3" id="audio1" controls="controls" style="margin: 0px 0px 0px 30px;"></audio>
+        <p>TAROT</p>
+        <div style="display: inline-block;float: right;" id="rightplace"></div>
+
     </header>
 
     <main>
@@ -63,35 +66,103 @@
 
 
                 </div>
-                <div style="left: 2080px;top: 100px;position: absolute;"><img src="picture/施工图片.png" ></div>
-                <div style="float: right;" id="rightplace" >
-                    <button onclick="back()">回到前页</button>
-                </div>
-                <script type="text/javascript">
-                    function movetoright(){ 
-                        document.getElementById("rightplace").scrollIntoView(true);
-                    }
-                    function back(){
-                        document.getElementById("leftplace").scrollIntoView(true);
-                    }
-                </script>
-
-            </article>
-
-        </main>
-
-        <footer>
-           <div style="display: inline-block;float: left;" id="leftplace"></div>
-
-           <div style="display: inline-block;">By <a href="https://www.zhihu.com/people/0-0-26-24" target="_blank" style="color:rgba(96,96,96,1);">Batman1</a> For &nbsp; <a href="https://www.adalab.cn" target="_blank"></div>
-
-            <div style="display: inline-block;"><img src="https://www.adalab.cn/images/adalab.png" width="150" height="30";></div></a>
-
-
-        </footer>
-
-
-    </body>
+                <div id="window">
+                 <ul id="roll">
+                    <img src="picture/chariot.jpg" /> 
+                    <img src="picture/emperor.jpg"/>
+                    <img src="picture/empress.jpg"/>
+                    <img src="picture/fool.jpg"/>
+                    <img src="picture/lovers.jpg" /> 
+                    <img src="picture/magician.jpg"/>
+                    <img src="picture/priestess.jpg"/>
+                    <img src="picture/chariot.jpg" /> 
+                    <img src="picture/emperor.jpg"/>
+                </ul>
+            </div>
+                <div id="showlist">
+                <ul>
+                 <img/> 
+                 <img/> 
+                 <img/>
+             </ul>
+                 </div>
+         <div id="buttonlist">
+         <button onclick="restart()" >Start</button>
+         <button onclick="stop()" >Stop</button>
+         <button onclick="back()">Back</button>
+        </div>
 
 
-    </html>
+
+
+        <script type="text/javascript">
+            var permanent=setInterval(get,1000) 
+            var content=document.getElementById("window");
+            var items=content.getElementsByTagName("ul");
+            var itemss=items[0].getElementsByTagName("img")
+            var asidecontent=document.getElementById("showlist");
+            var asideitems=asidecontent.getElementsByTagName("ul");
+            var asideitemss=asideitems[0].getElementsByTagName("img")
+            var count = 0 
+            function stop(){
+                clearInterval(permanent)
+                document.getElementById('roll').style.animationPlayState = 'paused'
+                for(var i=0;i<itemss.length;i++){
+                    if(itemss[i].offsetLeft  >= 75 && itemss[i].offsetLeft <= 324){
+
+                        asideitemss[count].src=itemss[i].src
+                        count = count +1
+                        if (count > 2) {
+                           alert('已经抽满了')
+                       }
+
+                   }}}
+
+                   function restart(){
+                    permanent=setInterval(get,10)
+                    document.getElementById('roll').style.animationPlayState = 'running'
+                    document.getElementById('roll').style.animation = 'change 0.5s linear 0s infinite normal'
+                }
+
+                function get(){
+
+                    for(var i=0;i<itemss.length;i++){
+                        if(itemss[i].offsetLeft  >= 75 && itemss[i].offsetLeft <= 324){
+                            itemss[i].style.opacity=1
+                        }
+                        else{
+                            itemss[i].style.opacity=0.2
+                        }
+                    }  
+                    
+                }
+               
+                function movetoright(){ 
+                    document.getElementById("rightplace").scrollIntoView(true);
+                }
+                function back(){
+                    document.getElementById("leftplace").scrollIntoView(true);
+                }
+          
+                get()
+            </script>
+
+        </article>
+
+    </main>
+
+    <footer>
+       <div style="display: inline-block;float: left;" id="leftplace"></div>
+
+       <div style="display: inline-block;">By <a href="https://www.zhihu.com/people/0-0-26-24" target="_blank" style="color:rgba(96,96,96,1);">Batman1</a> For &nbsp; <a href="https://www.adalab.cn" target="_blank"></div>
+
+        <div style="display: inline-block;"><img src="https://www.adalab.cn/images/adalab.png" width="150" height="30";></div></a>
+
+
+    </footer>
+
+
+</body>
+
+
+</html>
