@@ -206,7 +206,7 @@ overflow: hidden;
 #roll{
   margin: 0;
   padding: 0;
-  width: 2250px;
+  width: 2500px;
   height: 500px;
   background: black;
   animation:change 20s linear 0s infinite normal; 
