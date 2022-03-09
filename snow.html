@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="icon" href="picture/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>冬与春</title>
+  <link rel="stylesheet" type="text/css" href="snow.css">
+  <script src="snow.js"></script>
+</head>
+<body>
+    <header id="toppic"><div id="winterpic"><img src="picture/冬图.jpg"></div></header>
+    <main id="boundary">
+        <div style="display: inline-block;position: absolute;left: 150px;font-size: 120%;">By <a href="https://www.zhihu.com/people/0-0-26-24" target="_blank" style="color:rgba(250,250,250,1);">Batman1</a> For &nbsp; <a href="https://www.adalab.cn" target="_blank"></div>
+
+        <div style="display: inline-block;position: absolute;left: 300px;"><img src="https://www.adalab.cn/images/adalab.png" width="150" height="30";></div></a>
+                 <div style="display: inline-block;position: absolute;left: 800px;top: -5px;"><img src="picture/蓝色箭头.png"></div>
+        <div style="display: inline-block;position: absolute;left: 1300px;font-size: 120%;"><a href="index.html" style="color:white;">返回主页</a></div>
+
+
+
+    </main>
+
+
+  <footer id="bottompic"><div id="springpic"><img src="picture/春图.jpg"></div></footer>
+
+    <script type="text/javascript">
+        var one = document.getElementById('boundary');
+        var a =document.getElementById('toppic') ;
+        var b =document.getElementById('bottompic')
+       var c = Math.max(document.body.scrollHeight,document.documentElement.scrollHeight)
+
+        one.addEventListener('mousedown', function () {
+            document.addEventListener('mousemove',mover=function (e) {
+            one.style.top = e.clientY + 'px';
+            a.style.height=e.clientY+20+'px';
+            b.style.height=c-e.clientY-20+'px';
+        });
+      });
+        document.addEventListener('mouseup', function (){
+          document.removeEventListener('mousemove',mover)
+      });
+
+
+
+
+  </script>
+</body>
+</html>
+
