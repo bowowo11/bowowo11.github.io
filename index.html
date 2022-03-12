@@ -48,14 +48,14 @@
             <div class="content" style="left: 340px;top: 80px;">
                 <div> <img width="280" height="540" src="picture/图1.jpeg"> </div>
                 <div class="wrap">
-                    <h1 class="title"><a href="snow.html" class="hoverimage" style="font-size:200%">item1</a></h1>
+                    <h1 class="title"><a href="snow.html" class="hoverimage" style="font-size:150%">Winter & <font color=#D5F700>S</font><font color=#ABEF00>p</font><font color=#81E700>r</font><font color=#57DF00>i</font><font color=#2DD700>n</font><font color=#03CF00>g</font></a></h1>
                 </div>
             </div>
             <div class="content" style="left: 640px;top: 80px;float: left;">
                 <div> <img width="850" height="540" src="picture/图2.jpeg"> </div>
                 <div class="wrap">
-                    <h1 class="title"><a href="https://staratlas.com/" class="hoverimage" style="font-size:200%" >Star Atlas<br>
-                        <p style="font-size: 50%;"><font color="#FF2800">I</font><font color="#FF5000">n</font><font color="#FF7800">t</font><font color="#FFA000">e</font><font color="#FFC800">r</font><font color="#FFF000">a</font><font color="#D7FF00">c</font><font color="#AFFF00">t</font><font color="#87FF00">i</font><font color="#5FFF00">v</font><font color="#37FF00">e</font> <font color="#0FFF00">s</font><font color="#00FF28">t</font><font color="#00FF50">a</font><font color="#00FF78">r</font> <font color="#00FFA0">m</font><font color="#00FFC8">a</font><font color="#00FFF0">p</font> <font color="#00D7FF">o</font><font color="#00AFFF">f</font> <font color="#0087FF">t</font><font color="#005FFF">h</font><font color="#0037FF">e</font> <font color="#000FFF">n</font><font color="#2800FF">i</font><font color="#5000FF">g</font><font color="#7800FF">h</font><font color="#A000FF">t</font> <font color="#C800FF">s</font><font color="#F000FF">k</font><font color="#FF00D7">y</font></p></a></h1>
+                    <h1 class="title"><a href="page2.html" class="hoverimage" style="font-size:200%" >Constellations<br>
+                        <p style="font-size: 50%;"><font color="#FF2800">S</font><font color="#FF5000">i</font><font color="#FF7800">g</font><font color="#FFA000">n</font><font color="#FFC800">s</font> <font color="#FFF000">o</font><font color="#D7FF00">f</font> <font color="#AFFF00">Z</font><font color="#87FF00">o</font><font color="#5FFF00">d</font><font color="#37FF00">i</font><font color="#0FFF00">a</font><font color="#00FF28">c</font></p></a></h1>
                     </div>
                 </div>
 
@@ -139,10 +139,10 @@
                 }
                
                 function movetoright(){ 
-                    document.getElementById("rightplace").scrollIntoView(true);
+                    document.getElementById("rightplace").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
                 }
                 function back(){
-                    document.getElementById("leftplace").scrollIntoView(true);
+                    document.getElementById("leftplace").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
                 }
           
                 get()
