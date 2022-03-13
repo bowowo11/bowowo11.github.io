@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		}
 		var imges=this.getElementsByTagName("img")
 		var details =document.getElementById("detail").getElementsByTagName("h2")
+		var backgroundimge =document.getElementsByTagName("article")[0]
 		for(var i=0;i<this.getElementsByTagName("img").length;i++){
 			imges[i].addEventListener('click',function(){
 				details[0].innerHTML=birthday[constellation.indexOf(this.id)]
@@ -48,12 +49,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				details[4].innerHTML=luckynumber[constellation.indexOf(this.id)]
 				details[5].innerHTML=oppositepalace[constellation.indexOf(this.id)]
 				right.getElementsByTagName("h1")[0].innerHTML=this.id +"座"
-				document.getElementsByTagName("article")[0].style.background = "url(picture/"+this.id+".png)"
+				backgroundimge.style.opacity=0
+				backgroundimge.style.background = "url(picture/"+this.id+".png)"
+				function show(){
+					backgroundimge.style.opacity=Number(backgroundimge.style.opacity)+0.01
+					if (Number(backgroundimge.style.opacity)>0.7) {
+						clearInterval(showing);
+					}
+				}
+				var showing=setInterval(show,20)
 			})
 		}
 	})
 
-	left.addEventListener('mousedown',revolve)
 
+	left.addEventListener('mousedown',revolve)
 
 });
