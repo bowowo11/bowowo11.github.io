@@ -44,6 +44,41 @@
 
 
   </script>
+  <script type="text/javascript">
+    window.onmousemove = function(event) {
+        var arr = ForATOOChar();
+        //随机出0-15的数字
+        var randomNum = Math.floor(Math.random() * 0x10);
+         //随机出字体颜色
+        var coor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+        //创建元素跟随鼠标
+        var newEle = document.createElement("div");
+        newEle.innerText = arr[randomNum];
+        document.body.appendChild(newEle)
+        newEle.style.left = (event.clientX + 10) + "px";
+        newEle.style.top = (event.clientY + 10) + "px";
+        newEle.style.color = coor;
+        var opacity = parseFloat(1);
+        var toppx = (event.clientY + 20);
+       // 设置一秒逐渐消失
+        var setInterval = window.setInterval(function() {
+            if (opacity <= 0) { window.clearInterval(setInterval); newEle.remove(); } else {
+                opacity = (opacity - 0.1);
+                newEle.style.opacity = opacity;
+
+            }
+        }, 100)
+    }
+    //循环输出A-O字母
+    function ForATOOChar() {
+        var charArr = [];
+        for (var i = 0; i < 17; i++) {
+            charArr[i] = String.fromCharCode((65 + i))
+        }
+        return charArr;
+    }
+    </script>
+
 </body>
 </html>
 
