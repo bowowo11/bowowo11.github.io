@@ -1,6 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
+
 	var right =document.getElementById("rightpart")
 	var left  =document.getElementById("leftpart")
     var constellation=['白羊','金牛','双子','巨蟹','狮子','处女','天秤','天蝎','射手','摩羯','水瓶','双鱼'
@@ -66,3 +67,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	left.addEventListener('mousedown',revolve)
 
 });
+
